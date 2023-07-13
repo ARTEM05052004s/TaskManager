@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TaskManager</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_message">Are you sure to delete this task?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dashboard_fragment_title">Dashboard Fragment</string>
+    <string name="notifications_fragment_title">Notifications Fragment</string>
+    <string name="name">Name</string>
+    <string name="save">save</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="get_started">get started</string>
+    <string name="profile_title">Profile</string>
+    <string name="edit">edit</string>
+    <string name="update">update</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="send_code">send code</string>
+    <string name="enter_the_code">Enter the code</string>
+    <string name="verify">verify</string>
+    <string name="label">label</string>
+    <string name="model">model</string>
+    <string name="you_can_t_save_an_empty_task">You can\'t save an empty task!</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <include
+        android:id="@id/navigation_auth"
+        app:graph="@navigation/auth_navigation" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.taskmanager.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_taskFragment"
+            app:destination="@id/taskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.taskmanager.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.taskmanager.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.example.taskmanager.ui.task.TaskFragment"
+        android:label="Task"
+        tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.taskmanager.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.taskmanager.ui.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" />
+
+    <action
+        android:id="@+id/action_to_auth"
+        app:destination="@id/navigation_auth"
+        app:popUpToInclusive="true"
+        app:popUpTo="@id/navigation_auth"
+        />
+
+    <action
+        android:id="@+id/action_to_mobile_navigation"
+        app:destination="@id/navigation_home"
+        app:popUpToInclusive="true"
+        app:popUpTo="@id/mobile_navigation"
+        />
+
+    <action
+        android:id="@+id/action_to_onBoarding"
+        app:destination="@id/onBoardingFragment"
+        app:popUpToInclusive="true"
+        app:popUpTo="@id/onBoardingFragment"
+        />
+
+</navigation>
